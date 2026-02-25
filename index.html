@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Matematika Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <!-- Loading State -->
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>Memuat soal matematika...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error hidden">
+            <h2>Oops!</h2>
+            <p id="errorMessage">Terjadi kesalahan saat memuat soal.</p>
+            <button class="btn btn-primary" onclick="loadQuestions()">Coba Lagi</button>
+        </div>
+
+        <!-- Quiz Content -->
+        <div id="quizContainer" class="hidden">
+            <div class="header">
+                <h1>📚 Quiz Matematika</h1>
+                <p id="quizTitle">Uji kemampuan matematikamu!</p>
+            </div>
+
+            <div class="quiz-info">
+                <div class="quiz-info-item">
+                    <span>Soal Ke-</span>
+                    <strong id="currentQuestion">1</strong>
+                </div>
+                <div class="quiz-info-item">
+                    <span>Total Soal</span>
+                    <strong id="totalQuestions">0</strong>
+                </div>
+                <div class="quiz-info-item">
+                    <span>Skor</span>
+                    <strong id="score">0</strong>
+                </div>
+                <div class="quiz-info-item">
+                    <span>Waktu</span>
+                    <strong id="timer">00:00</strong>
+                </div>
+            </div>
+
+            <div class="quiz-content">
+                <div id="questionContainer" class="question-container">
+                    <div class="question-number" id="questionNumber">Soal 1</div>
+                    <div class="question-text" id="questionText"></div>
+                    <div class="options-container" id="optionsContainer"></div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()">← Sebelumnya</button>
+                    <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Selanjutnya →</button>
+                    <button class="btn btn-success hidden" id="submitBtn" onclick="showResult()">Selesai</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Container -->
+        <div id="resultContainer" class="hidden">
+            <div class="header">
+                <h1>🎉 Hasil Quiz</h1>
+                <p>Bagaimana hasil belajarmu?</p>
+            </div>
+
+            <div class="result-container">
+                <div class="result-score" id="finalScore">0</div>
+                <div class="result-message" id="resultMessage"></div>
+                
+                <div class="result-details">
+                    <div class="result-detail-item">
+                        <span>Total Soal:</span>
+                        <strong id="totalQuestionsResult">0</strong>
+                    </div>
+                    <div class="result-detail-item">
+                        <span>Jawaban Benar:</span>
+                        <strong id="correctAnswers">0</strong>
+                    </div>
+                    <div class="result-detail-item">
+                        <span>Jawaban Salah:</span>
+                        <strong id="wrongAnswers">0</strong>
+                    </div>
+                    <div class="result-detail-item">
+                        <span>Nilai:</span>
+                        <strong id="percentage">0%</strong>
+                    </div>
+                    <div class="result-detail-item">
+                        <span>Waktu Pengerjaan:</span>
+                        <strong id="timeTaken">00:00</strong>
+                    </div>
+                </div>
+
+                <div class="result-buttons">
+                    <button class="btn btn-primary" onclick="restartQuiz()">Coba Lagi</button>
+                    <button class="btn btn-secondary" onclick="showReview()">Lihat Pembahasan</button>
+                    <button class="btn btn-success" onclick="window.location.reload()">Quiz Baru</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Container -->
+        <div id="reviewContainer" class="hidden">
+            <div class="header">
+                <h1>📝 Pembahasan Soal</h1>
+                <p>Pelajari jawaban yang benar</p>
+            </div>
+
+            <div class="review-content" id="reviewContent"></div>
+
+            <div class="navigation-buttons" style="padding: 20px;">
+                <button class="btn btn-primary" onclick="backToResult()">Kembali ke Hasil</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

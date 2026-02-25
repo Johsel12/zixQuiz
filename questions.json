@@ -1,0 +1,82 @@
+{
+    "metadata": {
+        "title": "Quiz Matematika Kelas 6 SD",
+        "description": "Latihan soal matematika untuk persiapan ujian",
+        "totalQuestions": 10,
+        "difficulty": "Sedang",
+        "category": "Matematika SD",
+        "timeLimit": 30
+    },
+    "questions": [
+        {
+            "id": 1,
+            "question": "Hasil dari 12 × 8 adalah...",
+            "options": ["96", "86", "106", "116"],
+            "correctAnswer": 0,
+            "explanation": "12 × 8 = 96. Ingat perkalian dasar: 12 × 8 = (10 × 8) + (2 × 8) = 80 + 16 = 96"
+        },
+        {
+            "id": 2,
+            "question": "Sebuah persegi memiliki sisi 15 cm. Berapa luas persegi tersebut?",
+            "options": ["225 cm²", "215 cm²", "235 cm²", "245 cm²"],
+            "correctAnswer": 0,
+            "explanation": "Luas persegi = sisi × sisi = 15 × 15 = 225 cm²"
+        },
+        {
+            "id": 3,
+            "question": "Hasil dari 144 ÷ 12 adalah...",
+            "options": ["10", "11", "12", "13"],
+            "correctAnswer": 2,
+            "explanation": "144 ÷ 12 = 12, karena 12 × 12 = 144"
+        },
+        {
+            "id": 4,
+            "question": "Bentuk desimal dari 3/4 adalah...",
+            "options": ["0,25", "0,5", "0,75", "1,25"],
+            "correctAnswer": 2,
+            "explanation": "3/4 = 3 ÷ 4 = 0,75. Cara lain: 3/4 = (3×25)/(4×25) = 75/100 = 0,75"
+        },
+        {
+            "id": 5,
+            "question": "Hasil dari 25 + (-15) adalah...",
+            "options": ["40", "10", "-10", "-40"],
+            "correctAnswer": 1,
+            "explanation": "25 + (-15) = 25 - 15 = 10"
+        },
+        {
+            "id": 6,
+            "question": "Sebuah lingkaran memiliki jari-jari 7 cm. Berapa kelilingnya? (π = 22/7)",
+            "options": ["44 cm", "48 cm", "52 cm", "56 cm"],
+            "correctAnswer": 0,
+            "explanation": "Keliling lingkaran = 2 × π × r = 2 × 22/7 × 7 = 2 × 22 = 44 cm"
+        },
+        {
+            "id": 7,
+            "question": "Hasil dari 5² + 3² adalah...",
+            "options": ["34", "25", "16", "41"],
+            "correctAnswer": 0,
+            "explanation": "5² = 25, 3² = 9, jadi 25 + 9 = 34"
+        },
+        {
+            "id": 8,
+            "question": "Bentuk persen dari 0,45 adalah...",
+            "options": ["4,5%", "45%", "450%", "0,45%"],
+            "correctAnswer": 1,
+            "explanation": "Untuk mengubah desimal ke persen, kalikan dengan 100%: 0,45 × 100% = 45%"
+        },
+        {
+            "id": 9,
+            "question": "Hasil dari 2³ × 2² adalah...",
+            "options": ["32", "64", "128", "256"],
+            "correctAnswer": 0,
+            "explanation": "2³ = 8, 2² = 4, jadi 8 × 4 = 32. Atau dengan sifat eksponen: 2³ × 2² = 2⁵ = 32"
+        },
+        {
+            "id": 10,
+            "question": "Sebuah balok memiliki panjang 10 cm, lebar 5 cm, dan tinggi 3 cm. Berapa volumenya?",
+            "options": ["150 cm³", "125 cm³", "100 cm³", "175 cm³"],
+            "correctAnswer": 0,
+            "explanation": "Volume balok = panjang × lebar × tinggi = 10 × 5 × 3 = 150 cm³"
+        }
+    ]
+}
